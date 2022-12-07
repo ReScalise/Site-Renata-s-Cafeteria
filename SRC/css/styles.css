@@ -63,8 +63,22 @@ header .hero {
  padding: 10px;
  border-radius: 5px;
  border: solid rgba (0, 0 ,0, 3);
- 
+ text-align: center;
+
  }
+
+ main {
+    margin:20px 0px ;
+ }
+    
+ 
+
+ main .container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+ }
+
 
 .container {
     width: 90vw;
