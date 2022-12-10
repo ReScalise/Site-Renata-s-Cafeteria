@@ -179,6 +179,9 @@ footer .container p {
     width: 300px;}
 }
 
+header .hero.container  h2{
+    background-color: blue;
+}
 
 
 .container {
