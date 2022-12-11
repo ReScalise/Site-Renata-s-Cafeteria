@@ -10,55 +10,91 @@
     
     
 
-    <title>Restaurante da Renata</title>
+    <title>Renata's Cafeteria </title>
 
 </head>
 
 <body>
+
     <header>
         <nav>
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <h1>Restaurante</h1>
-                </a>
-
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="sobre.html"> Sobre</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="container">
+            <a href="index.html" class="logo">
+              <h1>Renata's Cafeteria</h1>
+            </a>
+    
+            <div class="menu">
+              <ul>
+                <li>
+                   <a href="sobre.html">SOBRE</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
-
+    
         <section class="hero">
-            <div class="conteiner">
-                <form id="formsearch">
-                    <input type="search" placeholder=" O Deseja Comer Hoje?" name="inputsearch" id="inputsearch">
-                </form>
-            </div>
+          <div class="container">
+            <form id="formSearch">
+              <input type="search" placeholder="COM O QUE DESEJA SE DELICIAR HOJE?" name="inputSearch" id="inputSearch">
+            </form>
+          </div>
         </section>
-    </header>
+      </header>
 
 
 
-    <main>
+
+
+
+      <main>
         <div class="container">
-            <h3>Pratos</h3>
-
-            <section class="pratos" id="product-div"> </section>
-
-
+          <h3>Pratos</h3>
+    
+          <section class="pratos" id="pratos-div">
+          </section>
+        </div>
+    
+        <div class="modal hide">
+          <form action="#" class="modal-form" id="form-product">
+            <div class="form-group">
+              <label for="title">Prato</label>
+              <input type="text" name="title" id="title" placeholder="Nome do prato" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantidade</label>
+              <input type="number" name="quantity" id="quantity" placeholder="1" min="1" max="10" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="name">Seu nome</label>
+              <input type="text" name="name" id="name" placeholder="Seu nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="address">Endereco</label>
+              <input type="text" name="address" id="address" placeholder="Seu nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="payment_type">Pagamento</label>
+              <select name="payment_type" id="payment_type" class="form-control">
+                <option value="cash">Dinheiro</option>
+                <option value="creditcard">Cartão de crédito</option>
+              </select>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-success" type="submit" id="btn-open">Finalizar Pedido</button>
+              <button class="btn btn-danger" type="button" id="btn-close" onclick="modalTrigger()">Cancelar</button>
+            </div>
+          </form>
         </div>
 
-    </main>
+      
+      </main>
   
   
     <footer>
         <div class="container">
             <p>
-                Desenvolvido Com Amor Renata Scalise
+                Desenvolvido Com Amor Por Renata Scalise 
             </p>
         </div>
 

@@ -2,189 +2,228 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
+  }
+  
+  html, body {
     font-family: helvetica, sans-serif;
     font-size: 1rem;
-    color: #000;
-    background-color: #f5f5f5;
-
-}
-
-
-
-
-
-header nav {
-    background-color: rgb(160, 112, 104);
+    color: rgb(43, 37, 37);
+    background-color: #f0cece;
+  }
+  
+  header nav {
+    background-color: rgb(180, 94, 120);
     padding: 10px 0;
-
-}
-
-
-header nav .container {
+  }
+  
+  header nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-header nav .logo {
-    color: #f5f5f5;
+  }
+  
+  header nav .logo {
+    color: #fff;
     text-decoration: none;
-
-}
-
-
-header nav .menu ul li a { 
-color: #f5f5f5;
-text-decoration: none;
-font-weight: bold;
-font-size: 1.2rem;
-}
-
-header .hero {
-    background-image: url(../imagens/hero.jpg);
+  }
+  
+  header nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  header .hero {
+    background-image: url('https://images.pexels.com/photos/3082789/pexels-photo-3082789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
- header .hero form {
+  }
+  
+  header .hero #formSearch {
     display: flex;
     justify-content: center;
     align-items: center;
-
- }
-
- header .hero form  input {
- width: 70vw;
- padding: 10px;
- border-radius: 5px;
- border: solid rgba (0, 0 ,0, 3);
- text-align: center;
-
- }
-
- main {
-    margin:20px 0px ;
- }
-    
- 
-
- main .container h3 {
+  }
+  
+  header .hero #formSearch input {
+    width: 70vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(138, 27, 46, 0.3);
+    text-align: center;
+  }
+  
+  main {
+    margin: 20px 0px;
+  }
+  
+  main .container h3 {
     font-size: 2rem;
-    margin-bottom: 20px 0px;
-
- }
-
- main .container .pratos {
+    margin-bottom: 20px;
+  }
+  
+  main .container .pratos {
     display: flex;
     flex-direction: column;
- }
-
- .prato {
-    background-color: #f5f5f5;
+  }
+  
+  .prato {
+    background-color: #fff;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
-    box-shadow: 1px 3px rgba( 0, 0, 0, 3);
-    transition: 0.2s ease;
-
- }
-
-  .prato img {
-    border-radius: 5px 5px 0px 0px;
-    margin-bottom: 10px;
-    
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: 0.3s ease;
   }
-
-
+  
+  .prato:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .prato img {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 10px;
+  }
+  
   .prato h4 {
-    padding: 0px 20px ;
+    padding: 0px 20px;
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 5px;
-    
   }
-
-  .prata p {
+  
+  .prato p {
     padding: 0px 20px;
     font-size: 1rem;
-    
   }
- /*botao quero este prato*/
+  
   .prato button {
     width: 50%;
     margin: 20px auto;
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
-    border:2px solid rgb(204, 113, 113) ;
-    text-transform: uppercase;  /*letras maiusculas*/
-    background-color: antiquewhite;
-    color: rgb(173, 37, 37);
+    border: 1px solid rgba(229, 155, 213, 0.3);
+    text-transform: uppercase;
+    background-color: rgb(163, 104, 132);
+    color: #fff;
     cursor: pointer;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, rgb(160, 43, 23));
-    transition: 0.4s ease;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: 0.3s ease;
   }
-
+  
   .prato button:hover {
-    background-color: rgb(201, 165, 156);
-    color: rgb(20, 3, 3) ;
+    background-color: #f3d9e2;
+    color: rgb(201, 65, 110);
   }
-
-
-.prato:hover {
-    background-color: rgb(241, 241, 213);
-
-}
-
-
-
-footer .container p {
-    text-align: center;
+  
+  
+  footer {
     padding: 10px 0px;
-
-}
-
-.hero-sobre{
-   height: 300px;
-   background-color: antiquewhite;
-   display: flex; 
-   color: bisque;
-
-}
-
-.hero-sobre .container {
+  }
+  
+  footer .container p {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #f0cece;
+  }
+  
+  .hero-sobre {
+    height: 300px;
+    background-color: #111;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-@media (min-width: 600px) {
+  }
+  
+  .hero-sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 600px) {
     main .container .pratos {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap; /*qundo estourar o limite não vai estourar o layout*/
- }
-      
-     .prato{
-    width: 300px;}
-}
-
-header .hero.container  h2{
-    background-color: blue;
-}
-
-
-.container {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    main .container .pratos .prato {
+      width: 300px;
+    }
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    left: 15%;
+    top: 50%;
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+  
+  /* Form */
+  .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #fff;
+  }
+  
+  .btn {
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background: green;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    opacity: 0.9;
+  }
+  
+  .btn-danger {
+    background: red;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    opacity: 0.9;
+  }
+  
+  /* container */
+  .container {
     width: 90vw;
     margin: 0px auto;
-}
+  }
+  
+  /* hide */
+  .hide {
+    display: none;
+  }
