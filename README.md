@@ -1,4 +1,6 @@
-# Site-Responsivo
+# Renata's Cafeteria.
+Utilizado para a criação do projeto, HTML 5, CSS 3 e Java Script.
+
 Site de uma empresa ficticia, criado com o intuito de desenvolver minhas habilidades, e tornar o projeto responssivo pra qualquer tipo de dispositivo.
 
 
